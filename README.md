@@ -23,7 +23,7 @@ Esta opção é ideal se você já tem ou prefere usar o Git e a linha de comand
 
     * Execute o comando `git clone` seguido do link do repositório:
         ```bash
-        git clone [https://github.com/seu-usuario/portfolio-IronMan.git](https://github.com/portfolio-ironMan/portfolio-IronMan.git)
+        git clone https://github.com/portfolio-ironMan/portfolio-IronMan.git
         ```
 
 3.  **Acesse a Pasta do Projeto**
