@@ -23,7 +23,7 @@ Esta opção é ideal se você já tem ou prefere usar o Git e a linha de comand
 
     * Execute o comando `git clone` seguido do link do repositório:
         ```bash
-        git clone https://github.com/portfolio-ironMan/portfolio-IronMan.git
+        git clone https://github.com/trabalho-frontEnd/portfolio-IronMan.git
         ```
 
 3.  **Acesse a Pasta do Projeto**
@@ -54,7 +54,7 @@ Esta opção é recomendada se você prefere uma ferramenta visual para gerencia
     * Vá em **File > Clone Repository** (Arquivo > Clonar Repositório).
     * Selecione a opção **URL** e cole o link:
         ```
-        https://github.com/portfolio-ironMan/portfolio-IronMan.git
+        https://github.com/trabalho-frontEnd/portfolio-IronMan.git
         ```
     * Escolha um caminho (pasta local) para salvar o projeto e clique em **Clone**.
 
