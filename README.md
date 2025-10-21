@@ -54,7 +54,7 @@ Esta opção é recomendada se você prefere uma ferramenta visual para gerencia
     * Vá em **File > Clone Repository** (Arquivo > Clonar Repositório).
     * Selecione a opção **URL** e cole o link:
         ```
-        https://github.com/seu-usuario/portfolio-IronMan.git
+        https://github.com/portfolio-ironMan/portfolio-IronMan.git
         ```
     * Escolha um caminho (pasta local) para salvar o projeto e clique em **Clone**.
 
