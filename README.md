@@ -21,7 +21,6 @@ Você pode executar este projeto de duas formas: **via terminal (com Git)** ou *
 Acesse a pasta do projeto
 
 ```bash
-Copiar código
 cd portfolio-IronMan
 Execute o projeto
 ```
