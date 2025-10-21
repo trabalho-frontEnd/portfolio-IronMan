@@ -42,4 +42,5 @@ Copiar código
      ```
 Escolha uma pasta local e clique em Clone.
 
-Após a clonagem, abra o arquivo index.html na pasta do projeto para visualizar o portfólio no navegador.
+Após a clonagem, abra o arquivo index.html na pasta do projeto para visualizar o portfólio no navegador. <br>
+### ⚠⚠ LEMBRE-SE, QUALQUER ALTERAÇÃO NO CÓDIGO QUE FOR COMITADA/SUBIDA ALTERARÁ O REPOSITÓRIO ORIGINAL. ⚠⚠
