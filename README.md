@@ -1,39 +1,46 @@
-⚙️ Como Executar
-🧩 Opção 1: Via Terminal (Git instalado)
+## ⚙️ Como Executar
 
-Verifique se o Git está instalado
+Você pode executar este projeto de duas formas: **via terminal (com Git)** ou **usando o GitHub Desktop**.
 
-Windows: abra o CMD e digite git --version
+---
 
-Caso não tenha, baixe aqui → https://git-scm.com/downloads
+### 🧩 Opção 1: Via Terminal (Git instalado)
 
-Clone o repositório:
+1. **Verifique se o Git está instalado**
 
-git clone https://github.com/seu-usuario/portfolio-IronMan.git
+   - No **Windows**, abra o CMD e digite:
+     ```bash
+     git --version
+     ```
+   - Caso não esteja instalado, baixe e instale através do site oficial:  
+     👉 [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
+2. **Clone este repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/portfolio-IronMan.git
+Acesse a pasta do projeto
 
-Acesse a pasta do projeto:
-
+```bash
+Copiar código
 cd portfolio-IronMan
+Execute o projeto
+```
+Basta abrir o arquivo index.html no seu navegador.
+(Clique duas vezes ou selecione “Abrir com navegador”.)
 
+### 🧩 Opção 2: Via GitHub Desktop (Interface Gráfica)
 
-Execute o projeto:
-
-Basta abrir o arquivo index.html no seu navegador (duplo clique ou "Abrir com navegador").
-
-🧩 Opção 2: Via GitHub Desktop (Interface Gráfica)
-
-Baixe e instale o GitHub Desktop:
+1. **Baixe e instale o GitHub Desktop**
 👉 https://desktop.github.com/
 
-Abra o aplicativo e clique em:
+Abra o **aplicativo** e clique em:
 File > Clone Repository
 
-Cole o link do repositório:
-
-https://github.com/seu-usuario/portfolio-IronMan.git
-
-
+Cole o link do repositório arduino
+Copiar código
+    ```
+     https://github.com/seu-usuario/portfolio-IronMan.git
+     ```
 Escolha uma pasta local e clique em Clone.
 
-Após clonar, abra a pasta e clique em index.html para visualizar o portfólio no navegador.
+Após a clonagem, abra o arquivo index.html na pasta do projeto para visualizar o portfólio no navegador.
