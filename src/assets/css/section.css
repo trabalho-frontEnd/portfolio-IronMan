@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 70% 1fr;
     background-color: black;
-    color: #FFF;
+    color: #FFF
 }
 
 .container-section-left{
