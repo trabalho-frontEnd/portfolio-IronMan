@@ -1,4 +1,4 @@
-.container-section{
+.container-sobre-mim{
     height: 100vh;
     display: grid;
     grid-template-columns: 70% 1fr;
@@ -7,18 +7,38 @@
     margin-top: 100px;
 }
 
-.container-section-left{
-    height: 500px;
+.container-sobre-mim-left h1 {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  text-shadow: 0 0 10px var(--cor-primaria);
+  margin-bottom: 10px;
 }
 
-.container-section-left div{
+.container-sobre-mim-left h2 {
+  color: #ccc;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.container-sobre-mim-left p {
+  color: #bbb;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+.container-sobre-mim-left div{
     margin: 50px 0 0 100px;
 }
-.container-section-left div p{
-  width: 80%;
-  font-size: 20px;
-}
 
+.style-frase{
+    width: 340px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .style-img{
     width: 250px;
     margin: 30px;
@@ -39,16 +59,16 @@
 }
 
 @media (max-width: 992px) {
-  .container-section {
+  .container-sobre-mim {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .container-section-left div {
+  .container-sobre-mim-left div {
     margin: 40px auto;
   }
 
-  .container-section-left div p {
+  .container-sobre-mim-left div p {
     width: 90%;
     font-size: 18px;
   }
@@ -76,4 +96,10 @@
     width: 150px;
   }
   
+}
+
+.container-projetos{
+    height: 100vh;
+
+    background-color: red;
 }
