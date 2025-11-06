@@ -2,43 +2,31 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 70% 1fr;
-    background-color: black;
+    background: linear-gradient(#000000, #0a0a0a);
     color: #FFF;
-    margin-top: 100px;
+    margin: 100px 0 0 0;
 }
 
 .container-sobre-mim-left h1 {
   font-size: 2.5rem;
   color: var(--cor-primaria);
   text-shadow: 0 0 10px var(--cor-primaria);
-  margin-bottom: 10px;
-}
-
-.container-sobre-mim-left h2 {
-  color: #ccc;
-  font-weight: 400;
-  margin-bottom: 20px;
-  font-size: 1.3rem;
 }
 
 .container-sobre-mim-left p {
   color: #bbb;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   max-width: 600px;
   margin-bottom: 25px;
 }
 .container-sobre-mim-left div{
     margin: 50px 0 0 100px;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
-.style-frase{
-    width: 340px;
-    padding: 10px;
-    background-color: red;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 .style-img{
     width: 250px;
     margin: 30px;
