@@ -23,7 +23,7 @@ html {
   align-items: center;
   padding: 10px 40px;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-  background: radial-gradient(circle at 30% 30%, #800707, #ffd000, #410707);
+  background: radial-gradient(circle at 30% 30%, #800707, #000000, #410707);
   background-size: 400% 400%;
   animation: nuvemPassando 20s ease-in-out infinite;
   position: fixed;
