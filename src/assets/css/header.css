@@ -3,7 +3,9 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --cor-Fonte-primaria: #00ffff;
   --border: #ffffff;
@@ -24,6 +26,12 @@
   background: radial-gradient(circle at 30% 30%, #800707, #000000, #410707);
   background-size: 400% 400%;
   animation: nuvemPassando 20s ease-in-out infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+
 }
 
 @keyframes nuvemPassando {
@@ -72,7 +80,9 @@
   display: flex;
   gap: 25px;
   font-size: 18px;
+  margin-right: 80px;
 }
+
 
 .container-right a {
   color: #00ffff;
@@ -83,4 +93,33 @@
 .container-right a:hover {
   color: #ff0000;
   text-shadow: 0 0 8px #ff0000;
+}
+
+@media (max-width: 992px) {
+  .container-header {
+    padding: 10px 20px;
+  }
+
+  .container-right ul {
+    gap: 15px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-left img {
+    width: 60px;
+  }
+
+  .container-right ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
 }
