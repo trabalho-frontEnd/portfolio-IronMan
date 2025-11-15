@@ -4,14 +4,26 @@
   font-family: "Michroma", sans-serif;
 }
 
+:root {
+    --black: #000;
+    --red: #FF0000;
+    --gold: #FFD642;
+    --cyan: #00F0FF;
+    --cyandim: #0aa0b8;
+    --white: #e5e5e5;
+}
+
+
 html,
 body {
   overflow-x: hidden;
 }
 
 body {
-  background-color: #000000;
-  color: rgba(255, 255, 255, 0.9);
+    background: var(--black);
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
 }
 
 header {
@@ -29,7 +41,8 @@ header {
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.219);
   font-size: 16px;
-
+  z-index: 2;
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -60,19 +73,238 @@ header {
   }
 }
 
-.slides{
-  width: 100%;
-  height: 106vh;
-  overflow: hidden;
-  display: flex;
-  position: relative;
+
+section {
+    padding: 80px 10%;
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  
+/* HUD Lines */
+.hud-line {
+    width: 120px;
+    height: 2px;
+    background: var(--cyan);
+    margin-bottom: 20px;
+}
+
+/* Titles */
+h1, h2, h3 {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ====== HERO SECTION ====== */
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000 60%, #111 100%);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+#home .quote {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin: 20px 0 40px;
+}
+
+.btn-holo {
+    border: 2px solid var(--cyan);
+    padding: 15px 35px;
+    color: var(--cyan);
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'Michroma';
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-holo:hover {
+    background: var(--cyan);
+    color: #000;
+    box-shadow: 0 0 20px var(--cyan);
+}
+
+/* ===== HUD Cards ===== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 2px solid var(--cyandim);
+    padding: 25px;
+    background: rgba(0, 255, 255, 0.02);
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(0, 255, 255, 0.08);
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.card h3 {
+    color: var(--cyan);
+    margin-bottom: 10px;
+}
+
+/* ===== Skills ===== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    border-left: 3px solid var(--cyan);
+    padding-left: 20px;
+}
+
+.skill-item h3 {
+    color: var(--gold);
+}
+
+/* ===== Timeline ===== */
+
+.timeline {
+    border-left: 2px solid var(--red);
+    padding-left: 30px;
+    margin-top: 40px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    left: -38px;
+    top: 2px;
+}
+
+/* ===== Contact ===== */
+
+form {
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    background: #111;
+    border: 2px solid var(--cyandim);
+    color: var(--cyan);
+    font-family: 'Rajdhani';
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cyan);
+}
+
+/* ===== Arc Reactor Footer ===== */
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.arc {
+    width: 140px;
+    height: 140px;
+    border: 4px solid var(--cyan);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 25px var(--cyan);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px var(--cyan); }
+    50% { box-shadow: 0 0 30px var(--cyan); }
+    100% { box-shadow: 0 0 15px var(--cyan); }
+}
+.contato-img-wrapper img {
+    max-width: 100%;
+    border: 3px solid var(--cyan);
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--cyan);
+    margin-bottom: 30px;
+}
+
+/* Título */
+.contato-title {
+    color: var(--red);
+    font-family: 'Michroma';
+    margin-bottom: 30px;
+}
+
+/* Mensagem holográfica */
+.contato-alerta {
+    border: 2px solid var(--cyan);
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 255, 255, 0.05);
+    box-shadow: 0 0 20px var(--cyan);
+    font-family: 'Rajdhani';
+    font-size: 1.2rem;
+    color: var(--cyan);
+    text-shadow: 0 0 10px var(--cyan);
+}
+
+/* Linhas holográficas extras */
+.hud-top-line,
+.hud-bottom-line {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: var(--cyan);
+    opacity: 0.2;
+}
+
+.hud-top-line {
+    top: 0;
+}
+
+.hud-bottom-line {
+    bottom: 0;
+}
+
+/* Garantir posicionamento da seção */
+.contato-section {
+    position: relative;
 }
