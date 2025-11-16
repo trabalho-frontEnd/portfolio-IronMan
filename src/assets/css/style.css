@@ -1,310 +1,362 @@
+/* ======================== */
+/* CSS GERAL                */
+/* ======================== */
+
+/* Reset básico e fontes */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Michroma", sans-serif;
 }
 
 :root {
-    --black: #000;
-    --red: #FF0000;
-    --gold: #FFD642;
-    --cyan: #00F0FF;
-    --cyandim: #0aa0b8;
-    --white: #e5e5e5;
+  --preto: #000000;
+  --vermelho: #FF0000;
+  --dourado: #FFD642;
+  --ciano: #00F0FF;
+  --ciano-claro: #0aa0b8;
+  --branco: #e5e5e5;
 }
 
-
-html,
 body {
+  background: var(--preto);
+  color: var(--branco);
   overflow-x: hidden;
 }
+html{
+  scroll-behavior: smooth;
 
-body {
-    background: var(--black);
-    font-family: 'Rajdhani', sans-serif;
-    color: var(--white);
-    overflow-x: hidden;
 }
+ #cabecalho.scrolled {
+    background-color: #ff0000; /* Cor quando rolar */
+  }
 
-header {
+
+/* ======================== */
+/* CABEÇALHO                */
+/* ======================== */
+#cabecalho {
   width: 80%;
-  display: flex;
   margin: 0 auto;
-  justify-content: center;
-  padding: 0px 8px;
-  position: absolute;
+  padding: 0 8px;
+  position: fixed;
+  display: flex;
   top: 20px;
   left: 0;
   right: 0;
-  z-index: -99;
-  background-color: #ffffff25;
+  background-color: rgb(0, 0, 0);
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.219);
-  font-size: 16px;
-  z-index: 2;
-  
-  nav {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+
+  nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-
-  ul {
-    display: flex;
-    list-style-type: none;
-    gap: 40px;
-    cursor: pointer;
-  }
-
-  li{
-    transition: all 0.3s;
-  }
-  li:hover{
-    transform: translateY(-1px);
-  }
-  .ironManLogo {
-    margin-right: 80px;
-    width: 80px;
-  }
-
-  div {
-    display: grid;
-    gap: 24px;
+    margin: 0 auto;
   }
 }
 
 
-section {
-    padding: 80px 10%;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-/* HUD Lines */
-.hud-line {
-    width: 120px;
-    height: 2px;
-    background: var(--cyan);
-    margin-bottom: 20px;
+.logo-homem-ferro {
+  width: 110px;
+  margin-right: 50px;
 }
 
-/* Titles */
-h1, h2, h3 {
-    font-family: 'Michroma', sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+.menu-lista {
+  display: flex;
+  list-style: none;
+  gap: 40px;
 }
 
-p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+.menu-lista li {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  a{
+    text-decoration: none;
+    color: var(--branco);
+  }
 }
 
-/* ====== HERO SECTION ====== */
 
-#home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(to bottom, #000 60%, #111 100%);
-    position: relative;
+.menu-lista li:hover {
+  transform: translateY(-2px);
 }
 
-.hero-content {
-    max-width: 700px;
+/* SEÇÃO HERO / INÍCIO      */
+#inicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000 60%, #111 100%);
+  position: relative;
 }
 
-#home h1 {
-    font-size: 3rem;
-    color: var(--red);
-    margin-bottom: 10px;
+.conteudo-hero {
+  max-width: 700px;
+  text-align: center;
 }
 
-#home .quote {
-    font-size: 1.5rem;
-    color: var(--gold);
-    margin: 20px 0 40px;
+.linha-hud {
+  width: 120px;
+  height: 2px;
+  background: var(--ciano);
+  margin-bottom: 20px;
 }
 
-.btn-holo {
-    border: 2px solid var(--cyan);
-    padding: 15px 35px;
-    color: var(--cyan);
-    background: transparent;
-    text-transform: uppercase;
-    font-family: 'Michroma';
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: 0.3s;
+#inicio h1 {
+  font-size: 3rem;
+  color: var(--vermelho);
+  margin-bottom: 10px;
 }
 
-.btn-holo:hover {
-    background: var(--cyan);
-    color: #000;
-    box-shadow: 0 0 20px var(--cyan);
+.citacao {
+  font-size: 1.5rem;
+  color: var(--dourado);
+  margin-bottom: 40px;
 }
 
-/* ===== HUD Cards ===== */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
+.botao-holografico {
+  border: 2px solid var(--ciano);
+  padding: 15px 35px;
+  background: transparent;
+  color: var(--ciano);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.card {
-    border: 2px solid var(--cyandim);
-    padding: 25px;
-    background: rgba(0, 255, 255, 0.02);
-    position: relative;
-    transition: 0.3s;
+.botao-holografico:hover {
+  background: var(--ciano);
+  color: #000;
+  box-shadow: 0 0 20px var(--ciano);
 }
 
-.card:hover {
-    background: rgba(0, 255, 255, 0.08);
-    transform: translateY(-5px);
-    border-color: var(--cyan);
+.iron-man-img {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.card h3 {
-    color: var(--cyan);
-    margin-bottom: 10px;
+/* SEÇÃO TECNOLOGIAS         */
+#tecnologias {
+  padding: 80px 10%;
+  
 }
 
-/* ===== Skills ===== */
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.skill-item {
-    border-left: 3px solid var(--cyan);
-    padding-left: 20px;
+.cartao {
+  padding: 25px;
+  border: 2px solid var(--ciano-claro);
+  background: rgba(0, 255, 255, 0.02);
+  transition: 0.3s;
 }
 
-.skill-item h3 {
-    color: var(--gold);
+.cartao:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 255, 255, 0.08);
+  border-color: var(--ciano);
 }
 
-/* ===== Timeline ===== */
-
-.timeline {
-    border-left: 2px solid var(--red);
-    padding-left: 30px;
-    margin-top: 40px;
+.cartao h3 {
+  color: var(--ciano);
+  margin-bottom: 10px;
 }
 
-.timeline-item {
-    margin-bottom: 40px;
-    position: relative;
+.cartao p {
+  color: var(--branco);
+  opacity: 0.9;
 }
 
-.timeline-item::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background: var(--red);
-    border-radius: 50%;
-    position: absolute;
-    left: -38px;
-    top: 2px;
+/* SEÇÃO HABILIDADES         */
+#habilidades {
+  padding: 80px 10%;
 }
 
-/* ===== Contact ===== */
-
-form {
-    max-width: 500px;
+.grade-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0 20px;
-    background: #111;
-    border: 2px solid var(--cyandim);
-    color: var(--cyan);
-    font-family: 'Rajdhani';
+.habilidade-item {
+  border-left: 3px solid var(--ciano);
+  padding-left: 20px;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--cyan);
+.habilidade-item h3 {
+  color: var(--dourado);
 }
 
-/* ===== Arc Reactor Footer ===== */
+/* SEÇÃO LEGENDA / TIMELINE  */
+.secao-legado {
+  background: #000;
+  color: #eee;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--ciano);
+}
+
+.secao-legado h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  text-shadow: 0 0 6px var(--vermelho);
+}
+
+.linha-do-tempo {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid var(--vermelho);
+}
+
+.item-tempo {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.ponto-temporal {
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, var(--ciano), var(--ciano-claro));
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--ciano);
+  border: 3px solid var(--vermelho);
+}
+
+.conteudo-tempo h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: var(--dourado);
+  text-shadow: 0 0 5px var(--dourado);
+}
+
+.conteudo-tempo p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/* Hover da timeline */
+.item-tempo:hover .ponto-temporal {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.item-tempo:hover .conteudo-tempo h3 {
+  color: var(--vermelho);
+  transition: 0.2s;
+}
+
+/* SEÇÃO CONTATO             */
+.secao-contato {
+  position: relative;
+  padding: 80px 10%;
+}
+
+.titulo-contato {
+  color: var(--vermelho);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.alerta-contato {
+  border: 2px solid var(--ciano);
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 20px var(--ciano);
+  font-family: 'Rajdhani';
+  font-size: 1.2rem;
+  color: var(--ciano);
+  text-shadow: 0 0 10px var(--ciano);
+  margin-bottom: 30px;
+}
+
+.imagem-contato img {
+  max-width: 100%;
+  border: 3px solid var(--ciano);
+  border-radius: 15px;
+  box-shadow: 0 0 20px var(--ciano);
+  margin-bottom: 30px;
+  margin-left: 150px;
+}
+
+.linha-hud-topo,
+.linha-hud-base {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: var(--ciano);
+  opacity: 0.2;
+}
+
+.linha-hud-topo {
+  top: 0;
+}
+
+.linha-hud-base {
+  bottom: 0;
+}
 
 footer {
-    text-align: center;
-    padding: 60px 20px;
-    position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
 }
 
-.arc {
-    width: 140px;
-    height: 140px;
-    border: 4px solid var(--cyan);
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    box-shadow: 0 0 25px var(--cyan);
-    animation: pulse 2s infinite;
+.reator-arco {
+  width: 140px;
+  height: 140px;
+  border: 4px solid var(--ciano);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 25px var(--ciano);
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% { box-shadow: 0 0 15px var(--cyan); }
-    50% { box-shadow: 0 0 30px var(--cyan); }
-    100% { box-shadow: 0 0 15px var(--cyan); }
-}
-.contato-img-wrapper img {
-    max-width: 100%;
-    border: 3px solid var(--cyan);
-    border-radius: 15px;
-    box-shadow: 0 0 20px var(--cyan);
-    margin-bottom: 30px;
-}
+  0% {
+    box-shadow: 0 0 15px var(--ciano);
+  }
 
-/* Título */
-.contato-title {
-    color: var(--red);
-    font-family: 'Michroma';
-    margin-bottom: 30px;
-}
+  50% {
+    box-shadow: 0 0 30px var(--ciano);
+  }
 
-/* Mensagem holográfica */
-.contato-alerta {
-    border: 2px solid var(--cyan);
-    padding: 30px;
-    border-radius: 15px;
-    background: rgba(0, 255, 255, 0.05);
-    box-shadow: 0 0 20px var(--cyan);
-    font-family: 'Rajdhani';
-    font-size: 1.2rem;
-    color: var(--cyan);
-    text-shadow: 0 0 10px var(--cyan);
-}
-
-/* Linhas holográficas extras */
-.hud-top-line,
-.hud-bottom-line {
-    position: absolute;
-    left: 10%;
-    width: 80%;
-    height: 2px;
-    background: var(--cyan);
-    opacity: 0.2;
-}
-
-.hud-top-line {
-    top: 0;
-}
-
-.hud-bottom-line {
-    bottom: 0;
-}
-
-/* Garantir posicionamento da seção */
-.contato-section {
-    position: relative;
+  100% {
+    box-shadow: 0 0 15px var(--ciano);
+  }
 }
