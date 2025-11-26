@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
+    <!--Cabeçalho-->
     <header>
         <div class="container">
             <div class="nav-flex">
@@ -16,51 +19,49 @@
                 <nav>
                     <ul>
                         <li><a href="#" class="ativo">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#">Resumo</a></li>
-                        <li><a href="#">Serviços</a></li>
                         <li><a href="#">Habilidades</a></li>
                         <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Blog</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
+
                 </nav>
             </div>
         </div>
     </header>
-
-    <section class="secao-heroi">
-        <div class="container conteudo-heroi">
-            <div class="texto-heroi">
+    <!--seção Inicial-->
+    <section class="secao-tonystark">
+        <div class="container conteudo-tonystark">
+            <div class="texto-tonystark">
                 <span class="saudacao">OLÁ!</span>
                 <h1>Eu sou <span class="destaque-amarelo">Tony Stark</span><br></h1>
-                <p class="subtitulo">Fullstack | Engenheiro Visionário</p>
-                
+                <p class="subtitulo">Engenheiro Visionário</p>
+
                 <div class="botoes-acao">
-                    <a href="#" class="botao btn-primario">Contrate-me</a>
+                    <a href="#" class="botao btn-primario">Contrata-me</a>
                     <a href="#" class="botao btn-secundario">Meus Trajes</a>
                 </div>
             </div>
 
-            <div class="imagem-heroi">
-                <img src="https://placehold.co/500x600/220000/FFF?text=Foto+Iron+Man" alt="Capacete Homem de Ferro">
+            <div class="imagem-tonystark">
+                <img src="assets/img/tony-stark.png" alt="">
             </div>
         </div>
     </section>
-
     <section class="secao-sobre" id="sobre">
-        <div class="container conteudo-sobre">
+        <div class="conrainer conteudo-sobre">
             <div class="img-perfil">
-                <img src="https://placehold.co/400x500/1a1a1a/FFF?text=Foto+Tony+Stark" alt="Tony Stark">
+                <img src="assets/img/iron-man.png" alt="">
             </div>
 
             <div class="info-sobre">
                 <span class="texto-fundo">Sobre</span>
                 <h2>Sobre Mim</h2>
                 <p class="texto-cinza">
-                    Um gênio, bilionário, playboy e filantropo. Dedicado a proteger o mundo e suprí-lo com tecnologia de ponta, ultrapassando os limites da engenharia pura.
+                    Um gênio, bilionário, playboy e filantropo. Dedicado a proteger o mundo e suprí-lo com tecnologia de
+                    ponta, ultrapassando os limites da engenharia pura.
                 </p>
-
                 <ul class="lista-dados">
                     <li><span class="rotulo">Nome:</span> Tony Stark</li>
                     <li><span class="rotulo">Nascimento:</span> 29 de Maio, 1970</li>
@@ -73,86 +74,10 @@
                 <div class="contador-projetos">
                     <span class="destaque-laranja">108</span> Projetos Completos
                 </div>
-
-                <a href="#" class="botao btn-azul">BAIXAR PROJETOS</a>
+                <a href="#" class="botao btn-azul">VER PROJETOS</a>
             </div>
         </div>
     </section>
-
-    <section class="secao-habilidades">
-        <div class="container">
-            <div class="cabecalho-habilidades">
-                <h2>Poder Tecnológico</h2>
-                <p class="texto-cinza">Muito além da pesquisa padrão, a autoridade absoluta em tecnologia.</p>
-            </div>
-
-            <div class="grid-habilidades">
-                <div class="coluna">
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>Php (Exemplo)</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-vermelha" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>IA & Machine Learning</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-vermelha" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>Design de Sistemas de Armas</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-vermelha" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coluna">
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>Robótica</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-azul" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>Engenharia Nuclear</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-azul" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="item-habilidade">
-                        <div class="info-barra">
-                            <span>SEO (Exemplo)</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="fundo-barra">
-                            <div class="progresso cor-azul" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; Adailton Junior</p>
-    </footer>
-
 </body>
+
 </html>
