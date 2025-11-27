@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -171,12 +171,18 @@ h1 {
 
 .img-perfil img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     filter: grayscale(20%);
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 80%, transparent 100%);
 }
 
 .info-sobre {
-    flex: 1;
+    width: 55%;
+    p{
+        font-size: 1.3rem;
+    }
 }
 
 h2 {
@@ -206,8 +212,10 @@ h2 {
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    font-size: 0.95rem;
+    font-size: 1.3rem;
+    gap: 70px;
     color: #ccc;
+
 }
 
 .rotulo {
@@ -233,4 +241,60 @@ h2 {
     color: white;
     border: none;
     box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+}
+
+/* Seção Trajes */
+.secao-trajes{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container principal do grid */
+.info-trajes {
+    display: grid;
+    /* Define duas colunas de tamanho igual (1fr 1fr) */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; /* Espaçamento entre os itens do grid */
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura para melhor visualização */
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+/* Estilo para cada item do traje dentro do grid */
+.traje-item {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.traje-item h3 {
+    margin-top: 0;
+    color: #cc0000; /* Cor vermelha do Iron Man */
+}
+
+/* O contêiner da imagem dentro do item do traje */
+.img-traje {
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    margin-bottom: 10px;
+}
+
+/* Garante que a imagem preencha o contêiner */
+.img-traje img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Estilos adicionais para o cabeçalho da seção */
+.conteudo-trajes {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secao-trajes {
+    padding: 50px 0;
+    background-color: #251010;
 }
